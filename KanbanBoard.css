@@ -1,3 +1,7 @@
+import './KanbanBoard.css';
+import './TicketCard.css';
+
+
 .kanban-board {
   display: flex;
   flex-direction: column;
