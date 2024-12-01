@@ -9,17 +9,17 @@ const KanbanBoard = () => {
   const [sortBy, setSortBy] = useState('priority');  // State for sorting (by priority, title)
 
   // Fetch ticket data when component mounts
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const data = await fetchData();  // Fetch data from the API
-        setTickets(data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    loadData();
-  }, []);
+useEffect(() => {
+  const loadData = async () => {
+    const data = await fetchData();
+    console.log('Fetched Tickets:', data); // Log fetched data
+    setTickets(data);
+  };
+  loadData();
+}, []);
+
+  console.log('Grouped Tickets:', groupedTickets);
+
 
   // Load saved preferences from localStorage when the component mounts
   useEffect(() => {
