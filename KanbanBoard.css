@@ -1,0 +1,13 @@
+.kanban-board {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+section {
+  margin: 8px 0;
+}
